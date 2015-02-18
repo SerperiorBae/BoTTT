@@ -4,8 +4,8 @@
 // If you really don't know how to do this... Run `node getserver.js URL`.
 // Fill in the URL of the client where `URL` is.
 // For example: `node getserver.js http://example-server.psim.us/`
-exports.server = 'sim.psim.us';
-exports.port = 8000;
+exports.server = 'http://pokemon-baekingdom.rhcloud.com-80.psim.us/';
+exports.port = 80;
 
 // This is the server id.
 // To know this one, you should check where the AJAX call 'goes' to when you
@@ -13,16 +13,16 @@ exports.port = 8000;
 // For example, on the Smogon server, it will say somewhere in the URL
 // ~~showdown, meaning that the server id is 'showdown'.
 // If you really don't know how to check this... run the said script above.
-exports.serverid = 'showdown';
+exports.serverid = 'pokemon-baekingdom';
 
 // The nick and password to log in with
 // If no password is required, leave pass empty
-exports.nick = 'Example bot nick';
-exports.pass = '';
+exports.nick = 'Sexyperior';
+exports.pass = 'colour1';
 
 // The rooms that should be joined.
 // Joining Smogon's Showdown's Lobby is not allowed.
-exports.rooms = ['example room name', 'another example'];
+exports.rooms = ['Lobby'];
 
 // Any private rooms that should be joined.
 // Private rooms will be moderated differently (since /warn doesn't work in them).
@@ -80,10 +80,6 @@ exports.allowmute = false;
 // rulebreakers. Spamming has a points value of 2, all caps has a points value of 1, etc.
 exports.punishvals = {
 	1: 'warn',
-	2: 'mute',
-	3: 'hourmute',
-	4: 'roomban',
-	5: 'ban'
 };
 
 //This key is used to deliver requests from Google Spreadsheets. Used by the wifi room.
